@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {page:'Confirm Email'}) %>
+<body>
+    <div class="container">
+        <%- include('./partials/imgbox.ejs') %>
+        <div class="pinBox">
+            <span class="corner">J</span>
+            <div class="p">
+                <p>Hey Aman, we have sent you a verification email. Please Enter you 5 digit code here.</p>
+            </div>
+            <form action="/" method="POST">
+                     <fieldset>
+                         <input type="hidden" name="from" value="confirm">
+                         <input type="number" name="pin1" id="" min="0" max="9">
+                         <input type="number" name="pin2" id="" min="0" max="9">
+                         <input type="number" name="pin3" id="" min="0" max="9">
+                         <input type="number" name="pin4" id="" min="0" max="9">
+                         <input type="number" name="pin5" id="" min="0" max="9">
+                     </fieldset>
+                <br>
+                <input type="submit" value="Confirm Email Address">
+            </form>
+            <div class="p">
+                <p>Didn't get an email? <em>Re-send verification</em></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

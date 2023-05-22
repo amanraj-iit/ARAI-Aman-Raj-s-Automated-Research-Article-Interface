@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {page:'HOME'}) %>
+<body>
+    <div class="container">
+        <%- include('./partials/imgbox.ejs') %>
+        <div class="formBox">
+            <h1>The latest Research paper List</h1>
+            <form action="/" method="POST">
+                <input type="hidden" name="from" value="home">
+                <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                <input type="submit" value="Send Me Movies">
+            </form> 
+        </div>
+    </div>
+</body>
+</html>

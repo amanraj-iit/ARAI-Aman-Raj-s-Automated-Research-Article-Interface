@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.container{
+    display: flex;
+}
+
+div.imageBox{
+    background-image: url("/infinity_war.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 20px);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+div.imageBox>h1{
+    font-size: 4rem;
+    margin: 0 0 15px;
+}
+div.imageBox>p{
+    font-size: 1.5rem;
+}
+div.formBox,
+div.pinBox,
+div.unsubscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    position: relative;
+}
+div.formBox h1 {
+    font-size: 3.5rem;
+    color: #5E1224;
+}
+
+
+div.formBox>form,
+div.pinBox>form,
+div.unsubscribe>div.p {
+    width: 80%;
+    margin: 40px 0;
+}
+div.formBox form label{
+    font-size: 1.5rem;
+    color: #5E1224;
+}
+div.formBox>form>input,
+div.pinBox>form>input,
+div.unsubscribe>div.p>button {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 5px 20px;
+    margin: 5px 0 15px;
+}
+body>div>div.pinBox>form>fieldset {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+div.pinBox>form>fieldset>input[type=number]{
+    -moz-appearance: textfield;
+    width: 4vw;
+    height: 4vw;
+    text-align: center;
+    font-size: 2vw;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+div.formBox>form>input[type=submit],
+div.pinBox>form>input[type=submit],
+div.unsubscribe>div.p>button {
+    background-color: #5E1224;
+    color: white;
+    padding: 10px 0;
+    margin: 40px 0 0;
+    cursor: pointer;
+}
+div.p{
+    width: 80%;
+    text-align: center;
+}
+div.p>p{
+    font-weight: 700;
+}
+div.p>p>em{
+    color: #5E1224;
+    font-weight: 900;
+}
+
+span.corner{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #5E1224;
+    color: white;
+    font-size: 2.5rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
