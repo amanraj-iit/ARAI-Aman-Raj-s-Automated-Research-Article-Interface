@@ -8,4 +8,4 @@ router.get('/confirmEmail', renderConfirmEmail);
 router.get('/unsubscribe', renderUnsubscribe);
 router.post('/', HandlePost);
 
-module.exports = router
+module.exports = router 
