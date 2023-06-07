@@ -6,7 +6,7 @@ const PinCodeGenerator = length => {
     let code = new Array(length).fill(null).map( () => nums[Math.floor(Math.random() * nums.length)] ).join("");
     return parseInt(code)
 }
-
+ 
 const renderIndex = (req, res) => {
     res.render("index");
 }
