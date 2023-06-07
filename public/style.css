@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Lato', sans-serif;
     outline: none;
     text-decoration: none;
@@ -45,7 +45,7 @@ div.unsubscribe {
     align-items: center;
     width: 40%;
     position: relative;
-}
+} 
 div.formBox h1 {
     font-size: 3.5rem;
     color: #5E1224;
